@@ -7,6 +7,7 @@ use App\Msoal;
 use App\Musertest;
 use App\Musertestjawab;
 use Illuminate\Http\Request;
+use DB;
 
 class Home extends Controller
 {
@@ -64,7 +65,7 @@ class Home extends Controller
             ->where('id_user', $user->id)
             ->join('soal','soal.nomor','=','id_soal')
             ->join('kategori_soal','kategori_soal.id','=','soal.category')
-            ->groupBy('soal.category')
+            ->groupBy(DB::raw('nama_kategori'))
             ->orderBy('total','desc')
             ->limit(3)
             ->get();
