@@ -132,7 +132,7 @@
 
 	<!-- Header -->
 	<nav style="background-color: #6C62AB;" class="navbar navbar-expand-md navbar-dark fixed-top">
-		<a href="{{('/')}}" style="padding: 10px 0px 10px 8%; font-weight: bold;" class="navbar-brand">DISC Online Test</a>
+		<a href="{{('/')}}" style="padding: 10px 0px 10px 8%; font-weight: bold;" class="navbar-brand">Online Test</a>
 		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
 			<span class="navbar-toggler-icon"></span>
 		</button>
