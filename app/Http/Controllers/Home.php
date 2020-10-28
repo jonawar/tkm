@@ -122,17 +122,17 @@ class Home extends Controller
             'host' => $request->email,
             'license' => $request->license
         );
-        $url = env('REGISTER_URL').'/sejoli-validate-license/';
+        $url = env('REGISTER_URL').'/sejoli-validate-license'.'?license='.$request->license.'&host='.$request->nama.'&string='.$request->nama;
 
         //check license
         $ch  = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $url.'?license='.$request->license.'&host='.$request->nama.'&string='.$request->nama);
+        curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
         $data = curl_exec($ch);
         curl_close($ch);
         $jsonResponse = json_decode($data);
-        return $jsonResponse->valid;
+        return $jsonResponse->valid ?? false;
     }
 
     // postest
@@ -168,7 +168,7 @@ class Home extends Controller
                         ->where('id_user', $id)
                         ->join('soal','soal.nomor','=','id_soal')
                         ->join('kategori_soal','kategori_soal.id','=','soal.category')
-                        ->groupBy('soal.category')
+                        ->groupBy(DB::raw('nama_kategori'))
                         ->orderBy('total','desc')
                         ->limit(3)
                         ->get();

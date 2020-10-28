@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>ONLINE TEST</title>
-	<link rel="stylesheet" href="{{asset('/css/bootstrap.min.css')}}">
+	<title>Tes Kecerdasan Majemuk</title>
+	<link rel="stylesheet" href="{{asset('/public/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -132,7 +132,7 @@
 
 	<!-- Header -->
 	<nav style="background-color: #6C62AB;" class="navbar navbar-expand-md navbar-dark fixed-top">
-		<a href="{{('/')}}" style="padding: 10px 0px 10px 8%; font-weight: bold;" class="navbar-brand">Online Test</a>
+		<a href="{{('/tkm')}}" style="padding: 10px 0px 10px 8%; font-weight: bold;" class="navbar-brand">Tes Kecerdasan Majemuk</a>
 		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
 			<span class="navbar-toggler-icon"></span>
 		</button>

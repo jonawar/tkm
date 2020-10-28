@@ -4,11 +4,11 @@
 	<div class="jumbotron" id="printpage" style="background-color: #FFF; width: 100%;">
 		<div class="page-header">
 			<div class="pull-left">
-				<p style="font-weight: bold;">Hasil TEST</p>
+				<p style="font-weight: bold;">HASIL TES</p>
 			</div>
 			<div class="pull-right">
 				<p style="font-weight: bold;" id="tanggal">{{date('d')}}, {{date('M')}}, {{date('Y')}}</p>
-				<button class="btn btn-success" id="btn-print">Cetak <i class="fa fa-print"></i></button>
+				<button class="btn btn-success" id="btn-print">Download Sertifikat <i class="fa fa-print"></i></button>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -20,8 +20,8 @@
 		<table class="table table-bordered table-hover" style="margin-top: 20px;">
 			<thead>
 				<tr>
-					<th style="width:70%">Category</th>
-					<th style="width:30%">Total</th>
+					<th style="width:70%">KECERDASAN</th>
+					<th style="width:30%">TOTAL</th>
 				</tr>
 			</thead>
 			@foreach($jawaban as $key => $val)

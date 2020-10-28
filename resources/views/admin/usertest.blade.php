@@ -1,5 +1,5 @@
 @extends('admin/layout/main')
-@section('title', 'Hasil Test')
+@section('title', 'HASIL TES')
 @section('container')
 
 <section class="content-header">
@@ -8,7 +8,7 @@
 	</h1>
 	<ol class="breadcrumb">
 		<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-		<li class="active">Hasil Tes</li>
+		<li class="active">HASIL TES</li>
 	</ol>
 </section>
 

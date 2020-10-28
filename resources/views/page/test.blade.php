@@ -3,9 +3,9 @@
 <!-- Content -->    
 <div class="container" style="margin-top: 30px; margin-bottom: 90px;">
 	<div class="jumbotron" style="background-color: #FFF;">
-		<p style="font-weight: bold;">SOAL TEST</p>
+		<p style="font-weight: bold;">SOAL TES (Panduan Observasi)</p>
 		<hr>
-		<p class="lead">Tes ini terdiri dari 80 Soal dan 4 jawaban setiap soal. Jawab secara jujur dan spontan.</p>
+		<p class="lead">Silahkan pilih jawaban yang paling sesuai dengan hasil observasi Ayah/Bunda terhadap Ananda, Pastikan semua Observasi diisi dengan sebaik baiknya agar Hasil yang didapat adalah hasil terbaik tentang ananda. Terdiri dari 80 Soal dengan pilihan 4 jawaban, semoga dimudahkan</p>
 		<form method="post" action="{{url('/test/postest')}}">
 		@csrf
 		<input type="hidden" name="nama" value="{{$nama}}">
@@ -24,8 +24,8 @@
 					<div class="card-body">
 						<table width="100%">
 							<tr>
-								<td width="5%">{{ $totalsoal }}</td>
-								<td width="95%">{{ $data->soal }}</td>
+								<td width="5%" style="vertical-align: text-top;padding-top: 6px;">{{ $totalsoal }}</td>
+								<td width="95%">{{ $data->soal }} sada das asd asd asd asd asdasdas asd as dasd as asd asd asd asd sdasdasdasdasdasd asd asdasdasd asd asd </td>
 							</tr>
 							<tr>
 								<td width="5%">
@@ -63,13 +63,13 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Tutorial Test</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Tutorial Tes</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
 			<div class="modal-body">
-				<p>"Tes ini terdiri dari 80 Soal dan 4 jawaban setiap soal. Jawab secara jujur dan spontan."</p>
+				<p>"Silahkan pilih jawaban yang paling sesuai dengan hasil observasi Ayah/Bunda terhadap Ananda, Pastikan semua Observasi diisi dengan sebaik baiknya agar Hasil yang didapat adalah hasil terbaik tentang ananda. Terdiri dari 80 Soal dengan pilihan 4 jawaban, semoga dimudahkan."</p>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-success" data-dismiss="modal">Mengerti</button>
