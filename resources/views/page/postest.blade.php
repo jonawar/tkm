@@ -33,6 +33,26 @@
 			</tbody>
 			@endforeach
 		</table>
+		@foreach($deskripsi as $key => $val)
+			<div class="col-md-12">
+				<div class="col-md-12 border rounded" style="margin-top: 10px;">
+					<div class="col-md-12" style="font-weight: bold;font-size : 23px;">{{ $val->type }}</div>
+					<!-- <div class="col-md-12">{{ $val->type_description }}</div> -->
+					<div class="col-md-12">
+						<div class="col-md-12" style="font-weight: bold;">Deskripsi</div>
+						<div class="col-md-12">{{ $val->description }}</div>
+					</div>
+					<div class="col-md-12">
+						<div class="col-md-12" style="font-weight: bold;">Poin Perhatian</div>
+						<div class="col-md-12">{{ $val->poin }}</div>
+					</div>
+					<div class="col-md-12">
+						<div class="col-md-12" style="font-weight: bold;">Cara Mengembangkan</div>
+						<div class="col-md-12">{!! $val->improvement !!}</div>
+					</div>
+				</div>
+			</div>
+		@endforeach
 	</div>
 </div>
 

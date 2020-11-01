@@ -25,7 +25,7 @@
 						<table width="100%">
 							<tr>
 								<td width="5%" style="vertical-align: text-top;padding-top: 6px;">{{ $totalsoal }}</td>
-								<td width="95%">{{ $data->soal }} sada das asd asd asd asd asdasdas asd as dasd as asd asd asd asd sdasdasdasdasdasd asd asdasdasd asd asd </td>
+								<td width="95%">{{ $data->soal }} </td>
 							</tr>
 							<tr>
 								<td width="5%">

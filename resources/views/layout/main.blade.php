@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Tes Kecerdasan Majemuk</title>
+	<title>TES KECERDASAN MAJEMUK</title>
 	<link rel="stylesheet" href="{{asset('/public/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -43,6 +43,12 @@
 	}
 	.lead{
 		font-size: 17px;
+	}
+	@media (max-width: 600px) {
+		.lead{
+			font-size: 17px;
+			margin-top: -12px;
+		}
 	}
 	input[type="text"],[type="number"],[type="email"]{
 		height: 50px;
@@ -132,7 +138,7 @@
 
 	<!-- Header -->
 	<nav style="background-color: #6C62AB;" class="navbar navbar-expand-md navbar-dark fixed-top">
-		<a href="{{('/tkm')}}" style="padding: 10px 0px 10px 8%; font-weight: bold;" class="navbar-brand">Tes Kecerdasan Majemuk</a>
+		<a href="{{('/tkm')}}" style="padding: 10px 0px 10px 8%; font-weight: bold;" class="navbar-brand">TES KECERDASAN MAJEMUK</a>
 		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
 			<span class="navbar-toggler-icon"></span>
 		</button>

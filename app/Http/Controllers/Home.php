@@ -6,6 +6,7 @@ use App\Mhome;
 use App\Msoal;
 use App\Musertest;
 use App\Musertestjawab;
+use App\Musertype;
 use Illuminate\Http\Request;
 use DB;
 
@@ -69,6 +70,14 @@ class Home extends Controller
             ->orderBy('total','desc')
             ->limit(3)
             ->get();
+
+            $deskripsi = [];
+            foreach($data['jawaban'] as $key => $val){
+                $type = Musertype::where('type',strtoupper($val->nama_kategori))->first();
+                array_push($deskripsi, $type);
+            }
+
+            $data['deskripsi'] = $deskripsi;
 
             return view('page/postest', $data);
         }
@@ -172,6 +181,14 @@ class Home extends Controller
                         ->orderBy('total','desc')
                         ->limit(3)
                         ->get();
+
+        $deskripsi = [];
+        foreach($data['jawaban'] as $key => $val){
+            $type = Musertype::where('type',strtoupper($val->nama_kategori))->first();
+            array_push($deskripsi, $type);
+        }
+        $data['deskripsi'] = $deskripsi;
+
         return view('page/postest', $data);
     }
 
